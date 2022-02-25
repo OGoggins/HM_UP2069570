@@ -7,6 +7,8 @@ import { k } from "./key-detection.mjs";
 const EL = {};
 export let GUESSES = [];
 export let PASSES = 0;
+export let WON = false;
+export let LOSS = false;
 let STOP = false;
 
 // Globle VAR That Dont Reset
@@ -98,14 +100,16 @@ export function guessUpdater() {
         //winning func
         if (currentState.includes(' _') !== true) {
             winEnd.classList.remove('hidden');
+            WON = true;
             STOP = true;
-
+            
             scoreTextW.textContent = (`You got a score of ${score}!`);
             multiplier ++;
         }
         
         //loss func
         if (PASSES == 10) {
+            LOSS = true;
             STOP =true;
             loseEnd.classList.remove('hidden');
 
@@ -119,6 +123,8 @@ export function guessUpdater() {
 
 export function guessRe() {
     PASSES = 0;
+    LOSS = false;
+    WON = false;
     STOP = false;
     GUESSES = [];
 }

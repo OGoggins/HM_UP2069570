@@ -14,7 +14,7 @@
     
     <!-- hold everything before start -->
     <div id='startGame'>
-        <button id="start" value="enableDiv">Start the Game</button>
+        <button id="start" value="enableDiv" class="selected">Start the Game</button>
         <button class = "colorBlue" id="difficulty1" >Easy</button>
         <button class = "" id="difficulty2" >Medium</button>
         <button class = "" id="difficulty3" >Hard</button>
@@ -28,14 +28,18 @@
         <div id="winEnd"class="hidden">
             <p id="titleW">Well done you have won the game</p>
             <p id="scoreW">0</p>
-            <button id="nL">Next level</button>
-            <button id="restartW">Restart Game</button>
+            <button id="nL" class="selected">Next level</button>
+            <button id="restartW" class="">Restart Game</button>
+        </div>
+        <div id="pauseM"class="hidden">
+            <p id="titleP" class="selected">The game is paused</p>
+            <button id="restartP">main menu</button>
         </div>
         <div id="loseEnd" class="hidden">
             <p id="titleL">You lost</p>
             <p id="scoreL">0</p>
             <p id="finalWord">""</p>
-            <button id="restartL">Restart Game</button>
+            <button id="restartL" class="selected">Restart Game</button>
         </div>
 
         <div id="boxes">

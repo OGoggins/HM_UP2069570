@@ -63,6 +63,11 @@ button:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
+.selected {
+    border-color:rgb(21, 34, 223);
+    border-width: 0.2em;
+}
+
 /* main game */
 #mainGame {
     position: absolute;
@@ -120,6 +125,15 @@ button:hover {
     height: 15em;
     position: absolute;
 }
+#pauseM {
+    background-color: rgba(183, 190, 194, 0.7);
+    top: 7em;
+    left: 10em;
+    border-radius: 2em;
+    width: 20em;
+    height: 10em;
+    position: absolute;
+}
 #loseEnd {
     background-color: rgba(238, 13, 13, 0.7);
     top: 7em;
@@ -129,7 +143,7 @@ button:hover {
     height: 15em;
     position: absolute;
 }
-#titleW, #titleL {
+#titleW, #titleL, #titleP {
     text-align: center;
     font-weight: bolder;
     font-size: 150%;
@@ -145,7 +159,7 @@ button:hover {
     margin-left: 6.3em;
     font-size: 115%;
 }
-#restartW, #restartL{
+#restartW, #restartL, #restartP{
     margin-top: 1em;
     margin-left: 5.5em;
     font-size: 115%; 

@@ -66,9 +66,11 @@ function finalCardAttacher() {
     const next = document.querySelector('#nL');
     const restartW = document.querySelector('#restartW');
     const restartL = document.querySelector('#restartL');
+    const restartP = document.querySelector('#restartP');
 
     next.addEventListener('click', nextLevel);
     restartW.addEventListener('click', restart);
     restartL.addEventListener('click', restart);
+    restartP.addEventListener('click', restart);
 
 }
