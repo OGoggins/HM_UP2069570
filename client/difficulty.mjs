@@ -1,4 +1,4 @@
-//import
+//imports
 import { easy , medium, hard } from "./library.mjs";
 import { guessUpdater } from "./guess-func.mjs";
 
