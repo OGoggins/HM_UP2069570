@@ -1,0 +1,53 @@
+<!doctype html>
+<title>Hangman</title>
+<link rel="stylesheet" href="style.css">
+
+
+<header>
+    <h1 id='title'>Hangman</h1>
+</header>
+
+<article>
+    
+    <p id='info'>In this Game you will need to guess the given word before the man is hung! Failing this will lead to his death.</p>
+    
+    
+    <!-- hold everything before start -->
+    <div id='startGame'>
+        <button id="start" value="enableDiv">Start the Game</button>
+        <button class = "colorBlue" id="difficulty1" >Easy</button>
+        <button class = "" id="difficulty2" >Medium</button>
+        <button class = "" id="difficulty3" >Hard</button>
+        
+    </div>
+    
+    <!-- holds everything after start -->
+    <div id='mainGame' class='hidden'> 
+        <canvas id='canvas1' width='800' height='800'></canvas>
+        
+        <div id="winEnd"class="hidden">
+            <p id="titleW">Well done you have won the game</p>
+            <p id="scoreW">0</p>
+            <button id="nL">Next level</button>
+            <button id="restartW">Restart Game</button>
+        </div>
+        <div id="loseEnd" class="hidden">
+            <p id="titleL">You lost</p>
+            <p id="scoreL">0</p>
+            <p id="finalWord">""</p>
+            <button id="restartL">Restart Game</button>
+        </div>
+
+        <div id="boxes">
+            <p id="displayWord" type = "text">"" </p>
+            <p id='pastGuesses' type="text1">"" </p>
+            <input id="guess" type="text" class="defultGuess"  maxlength="1" placeholder="Type a letter" disabled>
+        </div>
+    </div>
+    
+</article>
+
+
+<script src="index.mjs" type="module"></script>
+
+    
