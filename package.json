@@ -13,6 +13,8 @@
     "express": "^4.17.3"
   },
   "devDependencies": {
+    "eslint": "^8.10.0",
+    "eslint-config-portsoc": "^1.0.0",
     "nodemon": "^2.0.15"
   }
 }
