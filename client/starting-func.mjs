@@ -14,7 +14,7 @@ export function startUpdater() {
   kControl = 'false';
 
   // defult difficulty
-  if (WORDS === '') {
+  if (WORDS.includes('null')) {
     defultDif();
   }
 

@@ -7,7 +7,7 @@ import { guessUpdater } from './guess-func.mjs';
 export let SELECTEDWORD = '';
 
 // globle
-export let WORDS = [''];
+export let WORDS = ['null'];
 export let currentDif = '';
 const but1 = document.querySelector('#difficulty1');
 const but2 = document.querySelector('#difficulty2');

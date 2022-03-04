@@ -26,7 +26,7 @@ export function keyCon(event) {
       dif2.classList.remove('selected');
       dif3.classList.remove('selected');
     } else {
-      select();
+      select(start, dif1, dif2, dif3);
     }
   }
 }
